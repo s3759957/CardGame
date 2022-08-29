@@ -22,10 +22,10 @@ struct WelcomeView: View {
                         TextField("Player Name", text: $player)
                             .disableAutocorrection(true)
                             .font(.system(.headline, design: .rounded))
-                            .foregroundColor(.orange)
+                            .foregroundColor(.black)
                             .padding()
                             .frame(width: 300, height: 50)
-                            .background(LinearGradient(colors: [Color.purple.opacity(0.6), Color.mint.opacity(0.5)], startPoint: .top, endPoint: .leading))
+                            .background(LinearGradient(colors: [Color.white.opacity(0.5),Color.orange.opacity(0.6)], startPoint: .top, endPoint: .leading))
                             .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 5, style: .continuous))
                         
                         Button(action: {}) {
@@ -48,7 +48,7 @@ struct WelcomeView: View {
             }
             .navigationViewStyle(StackNavigationViewStyle())
             .navigationBarBackButtonHidden(true)
-            .accentColor(.pink)
+            .accentColor(.orange)
         }
     }
 }

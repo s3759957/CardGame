@@ -38,7 +38,9 @@ struct MenuView: View {
                         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 5, style: .continuous))
                         
                         Button(action: {}) {
-                            Text("How To Play").padding()
+                            NavigationLink(destination: HowToPlayView()){
+                                Text("How To Play").padding()
+                            }
                         }
                         .font(.system(.headline, design: .rounded))
                         .frame(width:300, height: 50).background(Color.orange)
